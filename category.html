@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/category.css">
+	<link rel="stylesheet" href="font/font.css">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#slider-range" ).slider({
+      range: true,
+      min: 721,
+      max: 1056,
+      values: [ 721, 1056 ],
+      slide: function( event, ui ) {
+        $( "#amount" ).val( "" + ui.values[ 0 ]);
+        $( "#amount_1" ).val( "" + ui.values[ 1 ]);
+      }
+    });
+    $( "#amount" ).val( "" + $( "#slider-range" ).slider( "values", 0 ) );
+    $( "#amount_1" ).val( "" + $( "#slider-range" ).slider( "values", 1 ) );
+  } );
+  </script>
+
+</head>
+<body>
+<div class="navbar">
+	<div class="navbar-top">
+		<div class="navbar-top-border">
+			<div class="navbar-top-left">
+				<a href="">
+					<p>Статьи</p>
+				</a>
+				<a href="">
+					<p>Гарантия</p>
+				</a>
+				<a href="">
+					<p>Доставка</p>
+				</a>
+				<a href="">
+					<p>Как купить</p>
+				</a>
+				<a href="">
+					<p>Контакты</p>
+				</a>
+			</div>
+			<div class="navbar-top-right">
+				<div>
+					<a href="">
+						<p class="enter">Вход и регистрация</p>
+					</a>
+					<a href="">
+						<p class="lang-rus">Рус</p>
+					</a>
+						<p class="dot">●</p>
+					<a href="">
+						<p class="lang-ukr">Укр</p>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="navbar-bottom">
+		<div class="navbar-bottom-logo">
+			<img src="image/logo.png" alt="logo">
+			<p class="navbar-bottom-logo-text-1">Медтехника<span>Лайф</span></p>
+			<p class="navbar-bottom-logo-text-2">интернет-магазин медтехники</p>
+		</div>
+		<div class="navbar-bottom-number">
+			<img class="navbar-bottom-number-img-1" src="image/kievstar.png" alt="kievstar">
+			<p class="navbar-bottom-number-text-1"><span>(067)</span> 485-51-85</p>
+			<img class="navbar-bottom-number-img-2" src="image/vodafone.png" alt="vodafone">
+			<p class="navbar-bottom-number-text-2"><span>(095)</span> 563-38-87</p>
+			<p class="navbar-bottom-number-text-3">ПН-СБ с 9:00 до 18:00, ВС выходной</p>
+		</div>
+		<div class="navbar-bottom-search">
+			<form action="" method="get">
+  			<input name="s" placeholder="Поиск товаров" type="search">
+  			<button type="submit"><img src="image/search.png" alt=""></button>
+			</form>
+		</div>
+		<div class="navbar-bottom-other">
+			<a href="">
+				<div class="comparison">
+					<img class="comparison-img" src="image/ comparison.png" alt="comparison">
+					<p class="comparison-text">Сравнение</p>
+				</div>
+			</a>
+			<a href="">	
+				<div class="basket">
+					<img class="basket-img" src="image/basket.png" alt="basket">
+					<p class="basket-text">Корзина</p>
+				</div>
+			</a>				
+		</div>
+	</div>
+</div>
+<div class="site-navigation">
+	<div class="site-navigation-central">
+		<div class="site-navigation-central-1">
+			<a href="">
+				<p>Домашняя медицина</p>
+			</a>
+			<img src="image/three-dot.png" alt="three-dot">
+		</div>
+		<div class="site-navigation-central-2">
+			<a href="">
+				<p>Ортопедия</p>
+			</a>
+			<img src="image/three-dot.png" alt="three-dot">
+		</div>
+		<div class="site-navigation-central-3">
+			<a href="">
+				<p>Реабилитация</p>
+			</a>
+			<img src="image/three-dot.png" alt="three-dot">
+		</div>
+		<div class="site-navigation-central-4">
+			<a href="">
+				<p>Красота и здоровье</p>
+			</a>
+			<img src="image/three-dot.png" alt="three-dot">
+		</div>
+		<div class="site-navigation-central-5">
+			<a href="">
+				<p>Мамам и новорожденным</p>
+			</a>
+			<img src="image/three-dot.png" alt="three-dot">
+		</div>
+		<div class="site-navigation-central-6">
+			<a href="">
+				<p>Медицинским учереждениям</p>
+			</a>
+			<img src="image/three-dot.png" alt="three-dot">
+		</div>
+		<a href="">
+			<div class="site-navigation-central-stock">
+				<p>Акции!</p>
+			</div>
+		</a>
+	</div>
+</div>
+<div class="content">
+	<div class="content-selection-of-goods">
+	<div class="wrapper-block">	
+		<div class="content-selection-of-goods-block-1">
+			<a href="" class="content-a-1">Главная страница</a>
+			<a href="" class="content-a-2">Домашняя медицина</a>
+			<img class="content-img-1" src="image/arrow.png" alt="arrow">
+			<a href="" class="content-a-3">Ингаляторы (Небулайзеры)</a>
+			<img class="content-img-2" src="image/arrow.png" alt="arrow">
+		</div>
+		<div class="content-selection-of-goods-block-2">
+			<p class="content-p-1">Производитель</p>
+			<label class="label-one">
+      <input class="radio" type="checkbox" name="radio-test">
+			<span class="radio-custom radio-custom-1"></span>
+			<span class="label label-1">AND (Япония)</span>
+			</label>
+			<br>
+			<label class="label-two-1">
+      <input class="radio" type="checkbox" name="radio-test">
+			<span class="radio-custom radio-custom-2"></span>
+			<span class="label label-2">B.Well (Великобритания)</span>
+			</label>
+			<br>
+			<label class="label-three">
+      <input class="radio" type="checkbox" name="radio-test">
+			<span class="radio-custom radio-custom-3"></span>
+			<span class="label label-3">Dinamika (Россия)</span>
+			</label>
+			<br>
+			<label class="label-four">
+      <input class="radio" type="checkbox" name="radio-test">
+			<span class="radio-custom radio-custom-4"></span>
+			<span class="label label-4">Dr. Frei (Швейцария)</span>
+			</label>
+			<br>
+			<label class="label-five">
+      <input class="radio" type="checkbox" name="radio-test">
+			<span class="radio-custom radio-custom-5"></span>
+			<span class="label label-5">Flaem Nova (Италия)</span>
+			</label>
+			<section class="ac-container">
+		    <div>
+		        <input id="ac-1" name="accordion-1" type="checkbox" checked />
+		        <label for="ac-1"><img class="arrow-ac-1" src="image/arrow.png" alt="">Еще (13)</label>
+		        <div class="hidden-block">
+						  <label class="label-one">
+				      <input class="radio" type="checkbox" name="radio-test">
+							<span class="radio-custom radio-custom-1"></span>
+							<span class="label label-1">AND (Япония)</span>
+							</label>
+							<br>
+							<label class="label-two">
+				      <input class="radio" type="checkbox" name="radio-test">
+							<span class="radio-custom radio-custom-2"></span>
+							<span class="label label-2">B.Well (Великобритания)</span>
+							</label>
+							<br>
+							<label class="label-three">
+				      <input class="radio" type="checkbox" name="radio-test">
+							<span class="radio-custom radio-custom-3"></span>
+							<span class="label label-3">Dinamika (Россия)</span>
+							</label>
+							<br>
+							<label class="label-four">
+				      <input class="radio" type="checkbox" name="radio-test">
+							<span class="radio-custom radio-custom-4"></span>
+							<span class="label label-4">Dr. Frei (Швейцария)</span>
+							</label>
+							<br>
+							<label class="label-five">
+				      <input class="radio" type="checkbox" name="radio-test">
+							<span class="radio-custom radio-custom-5"></span>
+							<span class="label label-5">Flaem Nova (Италия)</span>
+							</label>
+		        </div>
+		    </div>
+			</section>
+		</div>		
+		<div class="masonry">
+			<p>
+			  <label for="amount">Цена</label>
+			  <br>
+			  <input type="text" id="amount"">
+			  <input type="text" id="amount_1"">
+			  <a href="" class="masonry-button">→</a>
+			</p>
+			<div id="slider-range"></div>
+		</div>
+		<div class="content-selection-of-goods-block-3">
+			<p class="content-p-1">Тип</p>
+			<label class="label-six">
+      <input class="radio-1" type="checkbox" name="radio-test-two">
+			<span class="radio-custom-two radio-custom-6"></span>
+			<span class="label-two label-6">Детские</span>
+			</label>
+			<br>
+			<label class="label-seven">
+      <input class="radio-1" type="checkbox" name="radio-test-two">
+			<span class="radio-custom-two radio-custom-7"></span>
+			<span class="label-two label-7">Компрессорные</span>
+			</label>
+			<br>
+			<label class="label-eight">
+      <input class="radio-1" type="checkbox" name="radio-test-two">
+			<span class="radio-custom-two radio-custom-8"></span>
+			<span class="label-two label-8">Паровлажные</span>
+			</label>
+			<br>
+			<label class="label-nine">
+      <input class="radio-1" type="checkbox" name="radio-test-two">
+			<span class="radio-custom-two radio-custom-9"></span>
+			<span class="label-two label-9">Порошок</span>
+			</label>
+			<br>
+			<label class="label-ten">
+      <input class="radio-1" type="checkbox" name="radio-test-two">
+			<span class="radio-custom-two radio-custom-10"></span>
+			<span class="label-two label-10">Ультразвуковые</span>
+			</label>
+		</div>
+		<div class="content-selection-of-goods-block-4">
+			<p class="content-p-1">Средний размер частиц</p>
+			<label class="label-eleven">
+      <input class="radio-2" type="checkbox" name="radio-test-three">
+			<span class="radio-custom-three radio-custom-11"></span>
+			<span class="label-three-1 label-11">1,3 мкм</span>
+			</label>
+			<br>
+			<label class="label-twelve">
+      <input class="radio-2" type="checkbox" name="radio-test-three">
+			<span class="radio-custom-three radio-custom-12"></span>
+			<span class="label-three-1 label-12">1,8 мкм</span>
+			</label>
+			<br>
+			<label class="label-thirteen">
+      <input class="radio-2" type="checkbox" name="radio-test-three">
+			<span class="radio-custom-three radio-custom-13"></span>
+			<span class="label-three-1 label-13">2,4 мкм</span>
+			</label>
+			<br>
+			<label class="label-fourteen">
+      <input class="radio-2" type="checkbox" name="radio-test-three">
+			<span class="radio-custom-three radio-custom-14"></span>
+			<span class="label-three-1 label-14">2,44 мкм</span>
+			</label>
+			<br>
+			<label class="label-fifteen">
+      <input class="radio-2" type="checkbox" name="radio-test-three">
+			<span class="radio-custom-three radio-custom-15"></span>
+			<span class="label-three-1 label-15">2,6 мкм</span>
+			</label>
+		</div>
+		<section class="ac-container-2">
+		    <div>
+		        <input id="ac-2" name="accordion-2" type="checkbox" checked />
+		        <label for="ac-2"><img class="arrow-ac-2" src="image/arrow.png" alt="">Еще (8)</label>
+		        <div class="hidden-block-2">
+						  <label class="label-eleven">
+				      <input class="radio-2" type="checkbox" name="radio-test-three">
+							<span class="radio-custom-three radio-custom-11"></span>
+							<span class="label-three-1 label-11">1,3 мкм</span>
+							</label>
+							<br>
+							<label class="label-twelve">
+				      <input class="radio-2" type="checkbox" name="radio-test-three">
+							<span class="radio-custom-three radio-custom-12"></span>
+							<span class="label-three-1 label-12">1,8 мкм</span>
+							</label>
+							<br>
+							<label class="label-thirteen">
+				      <input class="radio-2" type="checkbox" name="radio-test-three">
+							<span class="radio-custom-three radio-custom-13"></span>
+							<span class="label-three-1 label-13">2,4 мкм</span>
+							</label>
+							<br>
+							<label class="label-fourteen">
+				      <input class="radio-2" type="checkbox" name="radio-test-three">
+							<span class="radio-custom-three radio-custom-14"></span>
+							<span class="label-three-1 label-14">2,44 мкм</span>
+							</label>
+							<br>
+							<label class="label-fifteen">
+				      <input class="radio-2" type="checkbox" name="radio-test-three">
+							<span class="radio-custom-three radio-custom-15"></span>
+							<span class="label-three-1 label-15">2,6 мкм</span>
+							</label>
+		        </div>
+		    </div>
+			</section>
+			<div class="content-selection-of-goods-block-5">
+				<p class="content-p-1">Изменение размера частиц</p>
+				<label class="label-sixteen">
+	      <input class="radio-3" type="radio" name="radio-test-four">
+				<span class="radio-custom-four radio-custom-16"></span>
+				<span class="label-four-1 label-16">Да</span>
+				</label>
+				<br>
+				<label class="label-seventeen">
+	      <input class="radio-3" type="radio" name="radio-test-four">
+				<span class="radio-custom-four radio-custom-17"></span>
+				<span class="label-four-1 label-17">Нет</span>
+				</label>
+		</div>
+		<div class="content-selection-of-goods-block-6">
+				<p class="content-p-1">Комплектация детской маской</p>
+				<label class="label-eighteen">
+	      <input class="radio-4" type="radio" name="radio-test-five">
+				<span class="radio-custom-five radio-custom-18"></span>
+				<span class="label-five-1 label-18">Да</span>
+				</label>
+				<br>
+				<label class="label-nineteen">
+	      <input class="radio-4" type="radio" name="radio-test-five">
+				<span class="radio-custom-five radio-custom-19"></span>
+				<span class="label-five-1 label-19">Нет</span>
+				</label>
+		</div>
+		<div class="content-selection-of-goods-block-7">
+				<p class="content-p-1">Работа от аккумуляторов</p>
+				<label class="label-twenty">
+	      <input class="radio-5" type="radio" name="radio-test-six">
+				<span class="radio-custom-six radio-custom-20"></span>
+				<span class="label-six-1 label-20">Да</span>
+				</label>
+				<br>
+				<label class="label-twenty-one">
+	      <input class="radio-5" type="radio" name="radio-test-six">
+				<span class="radio-custom-six radio-custom-21"></span>
+				<span class="label-six-1 label-21">Нет</span>
+				</label>
+		</div>
+		<div class="content-selection-of-goods-block-8">
+				<p class="content-p-1">Наличие адаптера сети</p>
+				<label class="label-twenty-two">
+	      <input class="radio-6" type="checkbox" name="radio-test-seven">
+				<span class="radio-custom-seven radio-custom-22"></span>
+				<span class="label-seven-1 label-22">Да</span>
+				</label>
+		</div>
+		<div class="content-selection-of-goods-block-9">
+				<p class="content-p-1">Питание</p>
+				<label class="label-twenty-three">
+	      <input class="radio-7" type="checkbox" name="radio-test-eight">
+				<span class="radio-custom-eight radio-custom-23"></span>
+				<span class="label-eight-1 label-23">Сеть</span>
+				</label>
+		</div>
+		<div class="content-selection-of-goods-block-10">
+			<p class="content-p-1">Основное предназначение</p>
+			<label class="label-twenty-four">
+      <input class="radio-8" type="checkbox" name="radio-test-nine">
+			<span class="radio-custom-nine radio-custom-24"></span>
+			<span class="label-nine-1 label-24">Детские ингаляторы</span>
+			</label>
+			<br>
+			<label class="label-twenty-five">
+      <input class="radio-8" type="checkbox" name="radio-test-nine">
+			<span class="radio-custom-nine radio-custom-25"></span>
+			<span class="label-nine-1 label-24">Для лечения бронхитов</span>
+			</label>
+			<br>
+			<label class="label-twenty-six">
+      <input class="radio-8" type="checkbox" name="radio-test-nine">
+			<span class="radio-custom-nine radio-custom-26"></span>
+			<span class="label-nine-1 label-26">Профессиональные</span>
+			</label>
+		</div>
+		<div class="content-selection-of-goods-block-11">
+			<p class="content-p-1">Популярные запросы</p>
+			<label class="label-twenty-seven">
+      <input class="radio-9" type="checkbox" name="radio-test-ten">
+			<span class="radio-custom-ten radio-custom-27"></span>
+			<span class="label-ten-1 label-27">Детские</span>
+			</label>
+			<br>
+			<label class="label-twenty-eight">
+      <input class="radio-9" type="checkbox" name="radio-test-ten">
+			<span class="radio-custom-ten radio-custom-28"></span>
+			<span class="label-ten-1 label-28">Швейцарский бренд</span>
+			</label>
+			<br>
+			<label class="label-twenty-nine">
+      <input class="radio-9" type="checkbox" name="radio-test-ten">
+			<span class="radio-custom-ten radio-custom-29"></span>
+			<span class="label-ten-1 label-29">Японское качество</span>
+			</label>
+		</div>
+		<div class="content-selection-of-goods-block-12">
+			<p class="content-p-1">Гарантия</p>
+			<label class="label-thirty">
+      <input class="radio-10" type="checkbox" name="radio-test-eleven">
+			<span class="radio-custom-eleven radio-custom-30"></span>
+			<span class="label-eleven-1 label-30">1 год</span>
+			</label>
+			<br>
+			<label class="label-thirty-one">
+      <input class="radio-10" type="checkbox" name="radio-test-eleven">
+			<span class="radio-custom-eleven radio-custom-31"></span>
+			<span class="label-eleven-1 label-31">2 года</span>
+			</label>
+			<br>
+			<label class="label-thirty-two">
+      <input class="radio-10" type="checkbox" name="radio-test-eleven">
+			<span class="radio-custom-eleven radio-custom-32"></span>
+			<span class="label-eleven-1 label-32">3 года</span>
+			</label>
+			<br>
+			<label class="label-thirty-three">
+      <input class="radio-10" type="checkbox" name="radio-test-eleven">
+			<span class="radio-custom-eleven radio-custom-33"></span>
+			<span class="label-eleven-1 label-33">5 лет</span>
+			</label>
+		</div>
+	</div>
+		<div class="best-goods">
+			<p class="best-goods-p1">ТОП-5</p>
+			<p class="best-goods-p2">лучшие товары</p>
+			<div class="best-goods-1">
+				<img src="image/best-goods-1.png" alt="">
+				<a href="">
+					<p class="best-goods-p3">Ингалятор Gamma Effect Max (Эффект Макс)</p>
+				</a>	
+				<p class="best-goods-p4">925 <span>грн.</span></p>
+			</div>
+			<div class="best-goods-2">
+				<img src="image/best-goods-2.png" alt="">
+				<a href="">
+					<p class="best-goods-p5">Ингалятор компрессорный Turbo Mini (Dr. Frei)</p>
+				</a>	
+				<p class="best-goods-p6">1,685 <span>грн.</span></p>
+			</div>
+			<div class="best-goods-3">
+				<img src="image/best-goods-3.png" alt="">
+				<a href="">
+					<p class="best-goods-p7">Ингалятор компрессорный Gamma NEMO</p>
+				</a>	
+				<p class="best-goods-p8">1,096 <span>грн.</span></p>
+			</div>
+			<div class="best-goods-4">
+				<img src="image/best-goods-4.png" alt="">
+				<a href="">
+					<p class="best-goods-p9">Небулайзер <br>OMRON A3 Com- plete (NE-C300-UK)</p>
+				</a>	
+				<p class="best-goods-p10">1,899 <span>грн.</span></p>
+			</div>			
+			<div class="best-goods-5">
+				<img src="image/best-goods-5.png" alt="">
+				<a href="">
+					<p class="best-goods-p11">Ингалятор компрессорный Little Doctor LD 212c</p>
+				</a>	
+				<p class="best-goods-p12">1,043 <span>грн.</span></p>
+			</div>
+		</div>
+	</div>
+	<div class="content-all-goods">
+		<div class="content-all-goods-1">
+			<p class="content-all-goods-p1">Ингаляторы (Небулайзеры)</p>
+			<a href="">
+				<img src="image/menu.png" alt="" class="content-all-goods-img1">
+			</a>
+			<a href="">
+				<img src="image/grid.png" alt="" class="content-all-goods-img2">
+			</a>
+		<div class="sorting">	
+			<form class="form" action="/" method="post">
+    		<div class="form__select">
+        	<select name="select">
+            <option value="1">Сортировка</option>
+            <option value="2">Option 2</option>
+        	</select>
+    		</div>
+			</form>
+		</div> 
+		</div>
+		<div class="content-all-goods-2">
+			<div class="good-1">
+				<a href="">
+					<img src="image/good-1.png" alt="">
+				</a>
+				<a href="">	
+					<p>Компрессорные ингаляторы</p>
+				</a>
+			</div>
+			<div class="good-2">
+				<a href="">
+					<img src="image/good-2.png" alt="">
+				</a>
+				<a href="">	
+					<p>Ультразвуковые ингаляторы</p>
+				</a>	
+			</div>
+			<div class="good-3">
+				<a href="">
+					<img src="image/good-3.png" alt="">
+				</a>
+				<a href="">	
+					<p>Паровлажные и солевые</p>
+				</a>
+			</div>
+			<div class="good-4">
+				<a href="">
+					<img src="image/good-4.png" alt="">
+				</a>
+				<a href="">	
+					<p>Назальный аспиратор</p>
+				</a>	
+			</div>
+			<div class="good-5">
+				<a href="">
+					<img src="image/good-5.png" alt="">
+				</a>
+				<a href="">	
+					<p>Запчасти для небулайзера</p>
+				</a>	
+			</div>
+		</div>
+		<div class="content-all-goods-3">
+			<div class="block-of-goods-1">
+				<div class="block-of-goods-img1">
+					<div class="stock-block"><p>ХИТ <br><span>продаж</span></p></div>
+					<img src="image/goods-block-1.png" alt="" class="stock-img-1">
+				</div>
+				<div class="block-of-goods-cap1">
+					<div class="price">
+						<p>785 <span>грн.</span></p>
+						<a href="">
+							<div>
+								<p>Купить</p>
+								<img src="image/ purchases.png" alt="">
+							</div>
+						</a>	
+					</div>
+					<a href="">
+						<p class="block-of-goods-cup1-p1">Юлайзер Хоум (Ulaizer Home CN-02MY) + Детская маска</p>
+					</a>
+					<img src="image/star.png" alt="" class="star-1">
+					<p class="block-of-goods-cup1-p2">Отзывы (5)</p>	
+					<p class="block-of-goods-cup1-p3">Код товара: 27779</p>
+					<img src="image/circle-tick.png" alt="" class="circle-tick">
+					<p class="block-of-goods-cup1-p4">товар на складе</p>
+					<img src="image/ Libra.png" alt="" class="libra">
+					<p class="block-of-goods-cup1-p5">В сравнении</p>
+					<p class="block-of-goods-cup1-p6">Отличная модель компрессорного ингалятора с хорошими характеристиками. Качество и <span>надежность производителя Gamma.</span></p>
+					<p class="block-of-goods-cup1-p7">Преимущества ингалятора Gamma Effect Max: <span class="span-1">компактные размеры</span> <span class="span-2">простота в эксплуатации</span> <span class="span-3">низкий размер частиц (2.44 мкм)</span></p>
+				</div>	
+				</div>
+				<div class="block-of-goods-2">
+					<div class="block-of-goods-img1">
+						<div class="stock-block-1"><p>Акция!</p></div>
+						<img src="image/goods-block-2.png" alt="" class="stock-img-2">
+					</div>
+					<div class="block-of-goods-cap1">
+						<div class="price">
+							<p>1,899 <span>грн.</span></p>
+							<a href="">
+								<div>
+									<p>Купить</p>
+									<img src="image/ purchases.png" alt="">
+								</div>
+							</a>	
+						</div>
+						<a href="">
+							<p class="block-of-goods-cup1-p1">Небулайзер OMRON A3 Complete (NE-C300-UK)</p>
+						</a>
+						<img src="image/star.png" alt="" class="star-1">
+						<p class="block-of-goods-cup1-p2">Отзывы (5)</p>	
+						<p class="block-of-goods-cup1-p3">Код товара: 27779</p>
+						<img src="image/circle-tick.png" alt="" class="circle-tick">
+						<p class="block-of-goods-cup1-p4">товар на складе</p>
+						<img src="image/ Libra-2.png" alt="" class="libra-1">
+						<p class="block-of-goods-cup2-p5">Сравнить</p>
+						<p class="block-of-goods-cup2-p6">Акция! При заказе сразу <span>- получи подарок</span></p>
+						<p class="block-of-goods-cup1-p6 block-of-goods-cup1-p6-2">Отличная модель компрессорного ингалятора с хорошими характеристиками. Качество и <span>надежность производителя Gamma.</span></p>
+						<p class="block-of-goods-cup1-p7">Преимущества ингалятора Gamma Effect Max: <span class="span-1">компактные размеры</span> <span class="span-2">простота в эксплуатации</span> <span class="span-3">низкий размер частиц (2.44 мкм)</span></p>
+					</div>	
+				</div>
+				<div class="block-of-goods-3">
+					<div class="block-of-goods-img1">
+						<div class="stock-block-3"><p>-7%</p></div>
+						<img src="image/goods-block-3.png" alt="" class="stock-img-3">
+					</div>
+					<div class="block-of-goods-cap1">
+						<div class="price">
+							<div class="red-line"></div>
+							<p class="price-p-1"><span class="price-span1">926</span> 836 <span class="price-span2">грн.</span></p>
+							<a href="">
+								<div>
+									<p>Купить</p>
+									<img src="image/ purchases.png" alt="">
+								</div>
+							</a>	
+						</div>
+						<a href="">
+							<p class="block-of-goods-cup1-p1">Ингалятор Gamma Effect Max (Эффект Макс)</p>
+						</a>
+						<img src="image/star.png" alt="" class="star-1">
+						<p class="block-of-goods-cup1-p2">Отзывы (5)</p>	
+						<p class="block-of-goods-cup1-p3">Код товара: 27779</p>
+						<img src="image/circle-tick.png" alt="" class="circle-tick">
+						<p class="block-of-goods-cup1-p4">товар на складе</p>
+						<img src="image/ Libra-2.png" alt="" class="libra-1">
+						<p class="block-of-goods-cup2-p5">Сравнить</p>
+						<p class="block-of-goods-cup1-p6">Отличная модель компрессорного ингалятора с хорошими характеристиками. Качество и <span>надежность производителя Gamma.</span></p>
+						<p class="block-of-goods-cup1-p7">Преимущества ингалятора Gamma Effect Max: <span class="span-1">компактные размеры</span> <span class="span-2">простота в эксплуатации</span> <span class="span-3">низкий размер частиц (2.44 мкм)</span></p>
+					</div>	
+				</div>
+				<div class="block-of-goods-4">
+						<div class="block-of-goods-img1">
+							<img src="image/like.png" alt="" class="like">
+							<img src="image/goods-block-4.png" alt="" class="stock-img-4">
+						</div>
+						<div class="block-of-goods-cap1">
+							<div class="price price-1">
+								<p class="price-p-2">1,850<span>грн.</span></p>
+								<a href="">
+									<div class="no-goods">
+										<p>Сообщить <span>когда появится</span></p>
+									</div>
+								</a>	
+							</div>
+							<a href="">
+								<p class="block-of-goods-cup1-p1 block-of-goods-cup4-p1">Небулайзер OMRON A3 Complete (NE-C300-UK)</p>
+							</a>
+							<img src="image/star.png" alt="" class="star-1">
+							<p class="block-of-goods-cup1-p2">Отзывы (5)</p>	
+							<p class="block-of-goods-cup1-p3">Код товара: 27779</p>
+							<p class="block-of-goods-cup1-p4 block-of-goods-cup4-p4"><span>товар под заказ</span></p>
+							<img src="image/ Libra-2.png" alt="" class="libra-1 libra-2">
+							<p class="block-of-goods-cup2-p5 block-of-goods-cup4-p5">Сравнить</p>
+							<p class="block-of-goods-cup1-p6 block-of-goods-cup4-p6">Современный медицинский прибор для эффективного лечения многих заболеваний. Три <span>режима распыления аэрозоля с простым переключением.</span></p>
+							<p class="block-of-goods-cup1-p7 block-of-goods-cup4-p7">Непрерывное время работы компрессора. Широкий спектр распыляемых лекарственных <span class="span-1">препаратов и малый остаточный объем. Полная комплектация. Современный медицинский </span> <span class="span-2">прибор для эффективного лечения многих заболеваний. Три режима распыления аэрозоля с </span></p>
+						</div>	
+					</div>
+					<div class="block-of-goods-5">
+						<div class="block-of-goods-img1">
+							<img src="image/goods-block-1.png" alt="" class="stock-img-1">
+						</div>
+						<div class="block-of-goods-cap1">
+							<div class="price">
+								<p>785 <span>грн.</span></p>
+								<a href="">
+									<div>
+										<p>Купить</p>
+										<img src="image/ purchases.png" alt="">
+									</div>
+								</a>	
+							</div>
+							<a href="">
+								<p class="block-of-goods-cup1-p1">Юлайзер Хоум (Ulaizer Home CN-02MY) + Детская маска</p>
+							</a>
+							<img src="image/star.png" alt="" class="star-1">
+							<p class="block-of-goods-cup1-p2">Отзывы (5)</p>	
+							<p class="block-of-goods-cup1-p3">Код товара: 27779</p>
+							<img src="image/circle-tick.png" alt="" class="circle-tick">
+							<p class="block-of-goods-cup1-p4">товар на складе</p>
+							<img src="image/ Libra.png" alt="" class="libra">
+							<p class="block-of-goods-cup1-p5">В сравнении</p>
+							<p class="block-of-goods-cup1-p6">Отличная модель компрессорного ингалятора с хорошими характеристиками. Качество и <span>надежность производителя Gamma.</span></p>
+							<p class="block-of-goods-cup1-p7">Преимущества ингалятора Gamma Effect Max: <span class="span-1">компактные размеры</span> <span class="span-2">простота в эксплуатации</span> <span class="span-3">низкий размер частиц (2.44 мкм)</span></p>
+						</div>	
+					</div>
+					<div class="block-of-goods-6">
+						<div class="block-of-goods-img1">
+							<img src="image/goods-block-1.png" alt="" class="stock-img-1">
+						</div>
+						<div class="block-of-goods-cap1">
+							<div class="price">
+								<p>785 <span>грн.</span></p>
+								<a href="">
+									<div>
+										<p>Купить</p>
+										<img src="image/ purchases.png" alt="">
+									</div>
+								</a>	
+							</div>
+							<a href="">
+								<p class="block-of-goods-cup1-p1">Юлайзер Хоум (Ulaizer Home CN-02MY) + Детская маска</p>
+							</a>
+							<img src="image/star.png" alt="" class="star-1">
+							<p class="block-of-goods-cup1-p2">Отзывы (5)</p>	
+							<p class="block-of-goods-cup1-p3">Код товара: 27779</p>
+							<img src="image/circle-tick.png" alt="" class="circle-tick">
+							<p class="block-of-goods-cup1-p4">товар на складе</p>
+							<img src="image/ Libra.png" alt="" class="libra">
+							<p class="block-of-goods-cup1-p5">В сравнении</p>
+							<p class="block-of-goods-cup1-p6">Отличная модель компрессорного ингалятора с хорошими характеристиками. Качество и <span>надежность производителя Gamma.</span></p>
+							<p class="block-of-goods-cup1-p7">Преимущества ингалятора Gamma Effect Max: <span class="span-1">компактные размеры</span> <span class="span-2">простота в эксплуатации</span> <span class="span-3">низкий размер частиц (2.44 мкм)</span></p>
+						</div>	
+					</div>
+										<div class="block-of-goods-7">
+						<div class="block-of-goods-img1">
+							<img src="image/goods-block-1.png" alt="" class="stock-img-1">
+						</div>
+						<div class="block-of-goods-cap1">
+							<div class="price">
+								<p>785 <span>грн.</span></p>
+								<a href="">
+									<div>
+										<p>Купить</p>
+										<img src="image/ purchases.png" alt="">
+									</div>
+								</a>	
+							</div>
+							<a href="">
+								<p class="block-of-goods-cup1-p1">Юлайзер Хоум (Ulaizer Home CN-02MY) + Детская маска</p>
+							</a>
+							<img src="image/star.png" alt="" class="star-1">
+							<p class="block-of-goods-cup1-p2">Отзывы (5)</p>	
+							<p class="block-of-goods-cup1-p3">Код товара: 27779</p>
+							<img src="image/circle-tick.png" alt="" class="circle-tick">
+							<p class="block-of-goods-cup1-p4">товар на складе</p>
+							<img src="image/ Libra.png" alt="" class="libra">
+							<p class="block-of-goods-cup1-p5">В сравнении</p>
+							<p class="block-of-goods-cup1-p6">Отличная модель компрессорного ингалятора с хорошими характеристиками. Качество и <span>надежность производителя Gamma.</span></p>
+							<p class="block-of-goods-cup1-p7">Преимущества ингалятора Gamma Effect Max: <span class="span-1">компактные размеры</span> <span class="span-2">простота в эксплуатации</span> <span class="span-3">низкий размер частиц (2.44 мкм)</span></p>
+						</div>	
+					</div>
+					<div class="block-of-goods-8">
+						<div class="block-of-goods-img1">
+							<img src="image/goods-block-1.png" alt="" class="stock-img-1">
+						</div>
+						<div class="block-of-goods-cap1">
+							<div class="price">
+								<p>785 <span>грн.</span></p>
+								<a href="">
+									<div>
+										<p>Купить</p>
+										<img src="image/ purchases.png" alt="">
+									</div>
+								</a>	
+							</div>
+							<a href="">
+								<p class="block-of-goods-cup1-p1">Юлайзер Хоум (Ulaizer Home CN-02MY) + Детская маска</p>
+							</a>
+							<img src="image/star.png" alt="" class="star-1">
+							<p class="block-of-goods-cup1-p2">Отзывы (5)</p>	
+							<p class="block-of-goods-cup1-p3">Код товара: 27779</p>
+							<img src="image/circle-tick.png" alt="" class="circle-tick">
+							<p class="block-of-goods-cup1-p4">товар на складе</p>
+							<img src="image/ Libra.png" alt="" class="libra">
+							<p class="block-of-goods-cup1-p5">В сравнении</p>
+							<p class="block-of-goods-cup1-p6">Отличная модель компрессорного ингалятора с хорошими характеристиками. Качество и <span>надежность производителя Gamma.</span></p>
+							<p class="block-of-goods-cup1-p7">Преимущества ингалятора Gamma Effect Max: <span class="span-1">компактные размеры</span> <span class="span-2">простота в эксплуатации</span> <span class="span-3">низкий размер частиц (2.44 мкм)</span></p>
+						</div>	
+					</div>
+					<div class="pages">
+						<p>Страница</p>
+						<a href="">1</a>
+						<a href="">2</a>
+						<a href="">3</a>
+						<a href="">4</a>
+						<a href="">5</a>
+						<a href="">6</a>
+						<a href="">7</a>
+					</div>
+			</div>
+		</div>
+	</div>
+	<div class="viewed-items">
+		<p class="viewed-items-p1">Просмотренные товары</p>
+		<img src="image/eye.png" alt="" class="viewed-items-img1">
+		<a href="" class="viewed-items-a1">Смотреть все</a>
+		<div class="viewed-items-blocks">
+			<div class="viewed-items-block1">
+				<img src="image/mediatech-1.png" alt="">
+				<a href="">
+					<p class="viewed-items-all1">Ингалятор Gamma Effect <span>Max (Эффект Макс)</span></p>
+				</a>
+				<img src="image/star-itema.png" alt="" class="viewed-items-img2">
+				<p class="viewed-items-all2">691 <span>грн</span></p>
+			</div>
+			<div class="viewed-items-block2">
+				<img src="image/medicaltech-2.png" alt="">
+				<a href="">
+					<p class="viewed-items-all1">Ингалятор Gamma Effect <span>Max (Эффект Макс)</span></p>
+			</a>
+				<img src="image/star-itema.png" alt="" class="viewed-items-img2">
+				<p class="viewed-items-all2">925 <span>грн</span></p>
+			</div>
+			<div class="viewed-items-block3">
+				<img src="image/mediatech-1.png" alt="">
+				<a href="">
+					<p class="viewed-items-all1">Ингалятор Gamma Effect <span>Max (Эффект Макс)</span></p>
+			</a>
+				<img src="image/star-itema.png" alt="" class="viewed-items-img2">
+				<p class="viewed-items-all2">691 <span>грн</span></p>
+			</div>
+			<div class="viewed-items-block4">
+				<img src="image/medicaltech-2.png" alt="">
+				<a href="">
+					<p class="viewed-items-all1">Ингалятор Gamma Effect <span>Max (Эффект Макс)</span></p>
+				</a>
+				<img src="image/star-itema.png" alt="" class="viewed-items-img2">
+				<p class="viewed-items-all2">925 <span>грн</span></p>
+			</div>
+			<div class="viewed-items-block5">
+				<img src="image/medicaltech-5.png" alt="">
+				<a href="">
+					<p class="viewed-items-all1">Ингалятор компрессорный <span>Turbo Mini (Dr. Frei)</span></p>
+				</a>
+				<img src="image/star-itema.png" alt="" class="viewed-items-img2">
+				<p class="viewed-items-all2">1,685 <span>грн</span></p>
+			</div>
+		</div>
+		<div class="viewed-items-txt">
+			<p class="viewed-items-txt1">
+			<span class="viewed-items-span1">Ингалятор (небулайзер) - незаменимый помощник.</span>	
+			<span class="viewed-items-span2">Для качественного лечения таких заболеваний, как астма, бронхит, трахеит и других болезней гортани и горла, врачи 
+			назначают ингаляции небулайзером. С помощью современных ингаляторов лекарство в виде распыленного воздуха
+		  попадает глубоко в дыхательные пути и производит высокий оздоровительный эффект. Компрессорные и
+			ультразвуковые небулайзеры для детей и взрослых, которые позволят вам проводить ингаляции в домашних условиях
+			</span>
+			<a href="">читать полностью</a>
+		</p>
+		<p class="viewed-items-txt2">
+			Отзывы покупателей
+			<a href="">
+				<span>Оставить отзыв</span>
+			</a>	
+		</p>		
+		<img src="image/advantages-img.png" alt="" class="advantages-img">		
+		</div>
+		<div class="pros">
+			<p class="pros-1">Выполнили свыше 150,000 заказов</p>
+			<p class="pros-2">Более 10 лет успешной работы</p>
+			<p class="pros-3">Более 50,000 покупателей</p>
+			<p class="pros-4">Оригинальный товар</p>
+			<p class="pros-5">Круглосуточный прием заказов</p>
+		</div>
+	</div>
+</div>
+<footer>
+	<div class="footer">
+		<p class="footer-p1">
+			Поделиться
+			<a href="">
+				<img src="image/fb.png" alt="" class="footer-img1">
+			</a>
+			<a href="">
+				<img src="image/twitter.png" alt="" class="footer-img2">
+			</a>
+			<a href="">
+				<img src="image/g+.png" alt="" class="footer-img3">
+			</a>
+		</p>
+		<p class="footer-p2">
+			© 2010–2018 Интернет-магазин Медтехники «Медтехника Лайф» 
+			Телефон в Николаеве (0512) 47-22-79, Киев (044) 209-70-38
+		</p>
+		<a href="">
+			<img src="image/novaposta.png" alt="" class="footer-img4">
+		</a>	
+		<a href="">	
+			<img src="image/ukrposta.png" alt="" class="footer-img5">
+		</a>	
+		<a href="">	
+			<img src="image/mastercard.png" alt="" class="footer-img6">
+		</a>	
+		<a href="">	
+			<img src="image/visa.png" alt="" class="footer-img7">
+		</a>	
+	</div>
+</footer>	
+</body>
+</html>
