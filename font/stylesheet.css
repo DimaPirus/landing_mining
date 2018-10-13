@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'PT Mono';
+    src: url('PTMono-Bold.woff2') format('woff2'),
+        url('PTMono-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+

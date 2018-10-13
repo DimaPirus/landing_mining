@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'PT_SansBold';
+    src: url('PTSans-Bold.woff2') format('woff2'),
+        url('PTSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Georgia_Italic';
+    src: url('Georgia-Italic.woff2') format('woff2'),
+        url('Georgia-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'PT_SansItalic';
+    src: url('PTSans-Italic.woff2') format('woff2'),
+        url('PTSans-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Georgia_BoldItalic';
+    src: url('Georgia-BoldItalic.woff2') format('woff2'),
+        url('Georgia-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'PT_Sans';
+    src: url('PTSans-Regular.woff2') format('woff2'),
+        url('PTSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Minion_ProBold';
+    src: url('MinionPro-Bold.woff2') format('woff2'),
+        url('MinionPro-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PT_MonoBold';
+    src: url('PTMono-Bold.woff2') format('woff2'),
+        url('PTMono-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+

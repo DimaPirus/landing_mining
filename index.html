@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="font/font.css">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+		function Go() {
+		var o = document.getElementById('divForm')
+		var h=(o.style.height)? parseInt(o.style.height): 200
+		o.style.height=((h==200)? 400: 200) + 'px'
+	}
+</script>
+  <script>
+  $( function() {
+    $( "#slider-range" ).slider({
+      range: true,
+      min: 721,
+      max: 1056,
+      values: [ 721, 1056 ],
+      slide: function( event, ui ) {
+        $( "#amount" ).val( "" + ui.values[ 0 ]);
+        $( "#amount_1" ).val( "" + ui.values[ 1 ]);
+      }
+    });
+    $( "#amount" ).val( "" + $( "#slider-range" ).slider( "values", 0 ) );
+    $( "#amount_1" ).val( "" + $( "#slider-range" ).slider( "values", 1 ) );
+  } );
+  </script>
+
+</head>
+<body>
+<div class="navbar">
+	<div class="navbar-top">
+		<div class="navbar-top-border">
+			<div class="navbar-top-left">
+				<a href="">
+					<p>Статьи</p>
+				</a>
+				<a href="">
+					<p>Гарантия</p>
+				</a>
+				<a href="">
+					<p>Доставка</p>
+				</a>
+				<a href="">
+					<p>Как купить</p>
+				</a>
+				<a href="">
+					<p>Контакты</p>
+				</a>
+			</div>
+			<div class="navbar-top-right">
+				<div>
+					<a href="">
+						<p class="enter">Вход и регистрация</p>
+					</a>
+					<a href="">
+						<p class="lang-rus">Рус</p>
+					</a>
+						<p class="dot">●</p>
+					<a href="">
+						<p class="lang-ukr">Укр</p>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="navbar-bottom">
+		<div class="navbar-bottom-logo">
+			<img src="image/logo.png" alt="logo">
+			<p class="navbar-bottom-logo-text-1">Медтехника<span>Лайф</span></p>
+			<p class="navbar-bottom-logo-text-2">интернет-магазин медтехники</p>
+		</div>
+		<div class="navbar-bottom-number">
+			<img class="navbar-bottom-number-img-1" src="image/kievstar.png" alt="kievstar">
+			<p class="navbar-bottom-number-text-1"><span>(067)</span> 485-51-85</p>
+			<img class="navbar-bottom-number-img-2" src="image/vodafone.png" alt="vodafone">
+			<p class="navbar-bottom-number-text-2"><span>(095)</span> 563-38-87</p>
+			<p class="navbar-bottom-number-text-3">ПН-СБ с 9:00 до 18:00, ВС выходной</p>
+		</div>
+		<div class="navbar-bottom-search">
+			<form action="" method="get">
+  			<input name="s" placeholder="Поиск товаров" type="search">
+  			<button type="submit"><img src="image/search.png" alt=""></button>
+			</form>
+		</div>
+		<div class="navbar-bottom-other">
+			<a href="">
+				<div class="comparison">
+					<img class="comparison-img" src="image/ comparison.png" alt="comparison">
+					<p class="comparison-text">Сравнение</p>
+				</div>
+			</a>
+			<a href="">	
+				<div class="basket">
+					<img class="basket-img" src="image/basket.png" alt="basket">
+					<p class="basket-text">Корзина</p>
+				</div>
+			</a>				
+		</div>
+	</div>
+</div>
+<div class="site-navigation">
+	<div class="site-navigation-central">
+		<div class="site-navigation-central-1">
+			<a href="">
+				<p>Домашняя медицина</p>
+			</a>
+			<img src="image/three-dot.png" alt="three-dot">
+		</div>
+		<div class="site-navigation-central-2">
+			<a href="">
+				<p>Ортопедия</p>
+			</a>
+			<img src="image/three-dot.png" alt="three-dot">
+		</div>
+		<div class="site-navigation-central-3">
+			<a href="">
+				<p>Реабилитация</p>
+			</a>
+			<img src="image/three-dot.png" alt="three-dot">
+		</div>
+		<div class="site-navigation-central-4">
+			<a href="">
+				<p>Красота и здоровье</p>
+			</a>
+			<img src="image/three-dot.png" alt="three-dot">
+		</div>
+		<div class="site-navigation-central-5">
+			<a href="">
+				<p>Мамам и новорожденным</p>
+			</a>
+			<img src="image/three-dot.png" alt="three-dot">
+		</div>
+		<div class="site-navigation-central-6">
+			<a href="">
+				<p>Медицинским учереждениям</p>
+			</a>
+			<img src="image/three-dot.png" alt="three-dot">
+		</div>
+		<a href="">
+			<div class="site-navigation-central-stock">
+				<p>Акции!</p>
+			</div>
+		</a>
+	</div>
+</div>
+<div class="content-wrapper">
+	<div class="content">
+			<div id="slider">
+			<input type="radio" name="slider" id="slide1" checked="">
+			<input type="radio" name="slider" id="slide2">
+			<input type="radio" name="slider" id="slide3">
+
+			<div id="slides">
+				<div id="overflow">
+					<div class="inner">
+						<div class="page">
+							<img src="image/slider.png" />
+							<p>Мембранные небулайзеры <span>ВМембранные ингаляторы (или меш-ингаляторы) объединяют в себе достоинства ультразвуковых и компрессорных устройств. Они бесшумны, компактны и могут пии</span></p>
+						</div>
+						<div class="page">
+							<img src="image/slider.png" />
+							<p>Мембранные небулайзеры <span>ВМембранные ингаляторы (или меш-ингаляторы) объединяют в себе достоинства ультразвуковых и компрессорных устройств. Они бесшумны, компактны и могут пии</span></p>
+						</div>
+						<div class="page">
+							<img src="image/slider.png" />
+							<p>Мембранные небулайзеры <span>ВМембранные ингаляторы (или меш-ингаляторы) объединяют в себе достоинства ультразвуковых и компрессорных устройств. Они бесшумны, компактны и могут пии</span></p>
+						</div>
+					</div> <!--inner-->
+				</div> <!--overflow-->
+			</div> <!--slides-->	
+			<div id="active">
+				<label for="slide1"></label>
+				<label for="slide2"></label>
+				<label for="slide3"></label>
+			</div>
+		</div>
+		<div class="offers">
+			<div>
+				<a href=""><img src="image/product-1.png" alt=""></a>
+				<a href=""><p>Компрессорные ингаляторы</p></a>
+			</div>
+			<div>
+				<a href=""><img src="image/product-2.png" alt=""></a>
+				<a href=""><p>Молокоотсосы и бутылочки</p></a>
+			</div>
+			<div>
+				<a href=""><img src="image/product-3.png" alt=""></a>
+				<a href=""><p>Стулья туалетные</p></a>
+			</div>
+			<div>
+				<a href=""><img src="image/product-4.png" alt=""></a>
+				<a href=""><p>Противопролежневые матрасы и подушки</p></a>
+			</div>
+			<div>
+				<a href=""><img src="image/product-5.png" alt=""></a>
+				<a href=""><p>Ортопедические стельки</p></a>
+			</div>
+			<div>
+				<a href=""><img src="image/product-6.png" alt=""></a>
+				<a href=""><p>Ингаляторы (Небулайзеры)</p></a>
+			</div>
+			<div>
+				<a href=""><img src="image/product-7.png" alt=""></a>
+				<a href=""><p>Автоматические тонометры</p></a>
+			</div>
+			<div>
+				<a href=""><img src="image/product-8.png" alt=""></a>
+				<a href=""><p>Алкотестеры</p></a>
+			</div>
+		</div>
+		<div class="border"></div>
+		<div class="tabs">
+			<input type="radio" name="tab" id="tab-1" checked>
+			<label for="tab-1">Для вдохновения</label>
+			<input type="radio" name="tab" id="tab-2">
+			<label for="tab-2">Инголяторы</label>
+			<input type="radio" name="tab" id="tab-3">
+			<label for="tab-3">Солевые грелки</label>	
+			
+			<div class="content-tabs">
+				<div class="tab-1">
+					<div>
+						<img src="image/tabs-1.png" alt="">
+						<p><a href="">Корректор осанки с ребрами жесткости Модель 2011</a></p>
+						<img src="image/star-tabs.png" alt="">
+						<p><span>363 <span>грн.</span></span></p>
+					</div>
+					<div>
+						<img src="image/tabs-2.png" alt="">
+						<p><a href="">Бандаж на шейный отдел хребта мягкой фиксации с жесткой вставкой</a></p>
+						<img src="image/star.png" alt="">
+						<p><span>232 <span>грн.</span></span></p>
+					</div>
+					<div>
+						<img src="image/tabs-3.png" alt="">
+						<p><a href="">Ортопедическая корковая стелька SUNBED Cork, Spannrit (Германия)</a></p>
+						<img src="image/star-tabs.png" alt="">
+						<p><span>455 <span>грн.</span></span></p>
+					</div>
+					<div>
+						<img src="image/tabs-4.png" alt="">
+						<p><a href="">Ингалятор Gamma Effect Max (Эффект Макс)</a></p>
+						<img src="image/star-tabs.png" alt="">
+						<p><span>691 <span>грн.</span></span></p>
+					</div>
+					<div>
+						<img src="image/tabs-5.png" alt="">
+						<p><a href="">Ингалятор Gamma Effect New (Гамма Эффект)</a></p>
+						<img src="image/star-tabs.png" alt="">
+						<p><span>925 <span>грн.</span></span></p>
+					</div>
+				</div>
+				<div class="tab-2">
+					<div>
+						<img src="image/tabs-1.png" alt="">
+						<p><a href="">Корректор осанки с ребрами жесткости Модель 2011</a></p>
+						<img src="image/star-tabs.png" alt="">
+						<p><span>363 <span>грн.</span></span></p>
+					</div>
+					<div>
+						<img src="image/tabs-2.png" alt="">
+						<p><a href="">Бандаж на шейный отдел хребта мягкой фиксации с жесткой вставкой</a></p>
+						<img src="image/star.png" alt="">
+						<p><span>232 <span>грн.</span></span></p>
+					</div>
+					<div>
+						<img src="image/tabs-3.png" alt="">
+						<p><a href="">Ортопедическая корковая стелька SUNBED Cork, Spannrit (Германия)</a></p>
+						<img src="image/star-tabs.png" alt="">
+						<p><span>455 <span>грн.</span></span></p>
+					</div>
+					<div>
+						<img src="image/tabs-4.png" alt="">
+						<p><a href="">Ингалятор Gamma Effect Max (Эффект Макс)</a></p>
+						<img src="image/star-tabs.png" alt="">
+						<p><span>691 <span>грн.</span></span></p>
+					</div>
+					<div>
+						<img src="image/tabs-5.png" alt="">
+						<p><a href="">Ингалятор Gamma Effect New (Гамма Эффект)</a></p>
+						<img src="image/star-tabs.png" alt="">
+						<p><span>925 <span>грн.</span></span></p>
+					</div>
+				</div>
+				<div class="tab-3">
+					<div>
+						<img src="image/tabs-1.png" alt="">
+						<p><a href="">Корректор осанки с ребрами жесткости Модель 2011</a></p>
+						<img src="image/star-tabs.png" alt="">
+						<p><span>363 <span>грн.</span></span></p>
+					</div>
+					<div>
+						<img src="image/tabs-2.png" alt="">
+						<p><a href="">Бандаж на шейный отдел хребта мягкой фиксации с жесткой вставкой</a></p>
+						<img src="image/star.png" alt="">
+						<p><span>232 <span>грн.</span></span></p>
+					</div>
+					<div>
+						<img src="image/tabs-3.png" alt="">
+						<p><a href="">Ортопедическая корковая стелька SUNBED Cork, Spannrit (Германия)</a></p>
+						<img src="image/star-tabs.png" alt="">
+						<p><span>455 <span>грн.</span></span></p>
+					</div>
+					<div>
+						<img src="image/tabs-4.png" alt="">
+						<p><a href="">Ингалятор Gamma Effect Max (Эффект Макс)</a></p>
+						<img src="image/star-tabs.png" alt="">
+						<p><span>691 <span>грн.</span></span></p>
+					</div>
+					<div>
+						<img src="image/tabs-5.png" alt="">
+						<p><a href="">Ингалятор Gamma Effect New (Гамма Эффект)</a></p>
+						<img src="image/star-tabs.png" alt="">
+						<p><span>925 <span>грн.</span></span></p>
+					</div>
+			</div>
+			<br class="clear:both" />
+		</div>
+		</div><!-- //wrapper -->
+		<div class="border"></div>
+		<div class="advertising">
+			<div>
+				<img src="image/advertising-1.png" alt="">
+				<p>Качественный товар <span>У нас в магазине только сертифицированный товар</span></p>
+			</div>
+			<div>
+				<img src="image/advertising-2.png" alt="">
+				<p>Доставка в день заказа <span>Мы доставим ваш заказ в этот же день</span></p>
+			</div>
+			<div>
+				<img src="image/advertising-3.png" alt="">
+				<p>Официальная гарантия <span>Весь товар находится на официальной гарантии</span></p>
+			</div>
+		</div>
+		<div class="border"></div>
+		<div class="items">
+			<p>Просмотренные товары <a href=""><img src="image/eye.png" alt=""></a><span><a href="">Смотреть все</a></span></p>
+			<div>
+				<img src="image/mediatech-1.png" alt="">
+				<p><a href="">Ингалятор Gamma Effect Max (Эффект Макс)</a></p>
+				<img src="image/star-tabs.png" alt="">
+				<p><span>691 <span>грн.</span></span></p>
+			</div>
+			<div>
+				<img src="image/medicaltech-2.png" alt="">
+				<p><a href="">Ингалятор Gamma Effect Max (Эффект Макс)</a></p>
+				<img src="image/star-tabs.png" alt="">
+				<p><span>925 <span>грн.</span></span></p>
+			</div>
+			<div>
+				<img src="image/mediatech-1.png" alt="">
+				<p><a href="">Ингалятор Gamma Effect Max (Эффект Макс)</a></p>
+				<img src="image/star-tabs.png" alt="">
+				<p><span>691 <span>грн.</span></span></p>
+			</div>
+			<div>
+				<img src="image/medicaltech-2.png" alt="">
+				<p><a href="">Ингалятор Gamma Effect Max (Эффект Макс)</a></p>
+				<img src="image/star-tabs.png" alt="">
+				<p><span>925 <span>грн.</span></span></p>
+			</div>
+			<div>
+				<img src="image/medicaltech-5.png" alt="">
+				<p><a href="">Ингалятор компрессорный Turbo Mini (Dr. Frei)</a></p>
+				<img src="image/star-tabs.png" alt="">
+				<p><span>1,685 <span>грн.</span></span></p>
+			</div>
+		</div>
+		<div class="border"></div>
+		<div class="items-recommended">
+			<p>Рекомендации на основе ваших просмотров</p>
+			<div>
+				<img src="image/mediatech-1.png" alt="">
+				<p><a href="">Ингалятор Gamma Effect Max (Эффект Макс)</a></p>
+				<img src="image/star-tabs.png" alt="">
+				<p><span>691 <span>грн.</span></span></p>
+			</div>
+			<div>
+				<img src="image/medicaltech-2.png" alt="">
+				<p><a href="">Ингалятор Gamma Effect Max (Эффект Макс)</a></p>
+				<img src="image/star-tabs.png" alt="">
+				<p><span>925 <span>грн.</span></span></p>
+			</div>
+			<div>
+				<img src="image/mediatech-1.png" alt="">
+				<p><a href="">Ингалятор Gamma Effect Max (Эффект Макс)</a></p>
+				<img src="image/star-tabs.png" alt="">
+				<p><span>691 <span>грн.</span></span></p>
+			</div>
+			<div>
+				<img src="image/medicaltech-2.png" alt="">
+				<p><a href="">Ингалятор Gamma Effect Max (Эффект Макс)</a></p>
+				<img src="image/star-tabs.png" alt="">
+				<p><span>925 <span>грн.</span></span></p>
+			</div>
+			<div>
+				<img src="image/medicaltech-5.png" alt="">
+				<p><a href="">Ингалятор компрессорный Turbo Mini (Dr. Frei)</a></p>
+				<img src="image/star-tabs.png" alt="">
+				<p><span>1,685 <span>грн.</span></span></p>
+			</div>
+		</div>
+		<div class="border"></div>
+		<div class="article">
+			<p>Интересные статьи</p>
+			<div>
+				<div>
+					<img src="image/ article-1.png" alt="">
+					<p><span>02.11.2017</span> <span><a href="">Как пользоваться солевой грелкой</a></span> <span>Как активировать и восстановить грелку. Основные правила и предостережения.</span></p>
+				</div>
+				<div>
+					<img src="image/ article-2.png" alt="">
+					<p><span>01.11.2017</span> <span><a href="">Что такое солевая грелка</a></span> <span>Что называют солевыми грелками и для чего их используют.  Какой принцип их действия, какими бывают и безопасны ли для людей и животных.</span></p>
+				</div>
+				<div>
+					<img src="image/ article-3.png" alt="">
+					<p><span>22.12.2016</span> <span><a href="">Бесплатная доставка</a></span> <span>На какие товары распространяется бесплатная доставка.</span></p>
+				</div>
+			</div>	
+		</div>		
+		<div class="viewed-items">
+	
+			<div class="viewed-items-txt">
+				<div id='divForm'>
+					<div id='podrobnee'>
+						<p><span>Интернет-магазин «МедтехникаЛайф» работает по всей Украине</span> <span>В нашем интернет магазине медтехники Вы сможете купить электронные тонометры, термометры. Для людей болеющих на сахарный диабет у нас есть прибор для регулярного контроля уровня сахара в крови - "Глюкометр". Так же в ассортимент продукции магазина входят: бандажи, массажеры, стимуляторы зрения и др..</span> <span>Мы можем доставить купленный Вами товар любым удобным для Вас способом. Доставка по городу Николаеву осуществляется БЕСПЛАТНО (при покупки на сумму свыше 1000 грн.)! Доставка по городу Киеву осуществляется БЕСПЛАТНО (при покупки на сумму свыше 1500 грн.)! Подробней о Доставке читайте на странице "Доставка"</span></p>
+					</div>
+					<div id='podrobnee'>
+						<p><span>Интернет-магазин «МедтехникаЛайф» работает по всей Украине</span> <span>В нашем интернет магазине медтехники Вы сможете купить электронные тонометры, термометры. Для людей болеющих на сахарный диабет у нас есть прибор для регулярного контроля уровня сахара в крови - "Глюкометр". Так же в ассортимент продукции магазина входят: бандажи, массажеры, стимуляторы зрения и др..</span> <span>Мы можем доставить купленный Вами товар любым удобным для Вас способом. Доставка по городу Николаеву осуществляется БЕСПЛАТНО (при покупки на сумму свыше 1000 грн.)! Доставка по городу Киеву осуществляется БЕСПЛАТНО (при покупки на сумму свыше 1500 грн.)! Подробней о Доставке читайте на странице "Доставка"</span></p>
+					</div>
+				</div>
+				<input type='button' value='Читать полностью' onclick='Go()' />
+			<img src="image/advantages-img.png" alt="" class="advantages-img">		
+			</div>
+			<div class="pros">
+				<p class="pros-1">Выполнили свыше 150,000 заказов</p>
+				<p class="pros-2">Более 10 лет успешной работы</p>
+				<p class="pros-3">Более 50,000 покупателей</p>
+				<p class="pros-4">Оригинальный товар</p>
+				<p class="pros-5">Круглосуточный прием заказов</p>
+			</div>
+		</div>
+	</div>
+</div>
+<footer>
+	<div class="footer">
+		<p class="footer-p1">
+			Поделиться
+			<a href="">
+				<img src="image/fb.png" alt="" class="footer-img1">
+			</a>
+			<a href="">
+				<img src="image/twitter.png" alt="" class="footer-img2">
+			</a>
+			<a href="">
+				<img src="image/g+.png" alt="" class="footer-img3">
+			</a>
+		</p>
+		<p class="footer-p2">
+			© 2010–2018 Интернет-магазин Медтехники «Медтехника Лайф» 
+			Телефон в Николаеве (0512) 47-22-79, Киев (044) 209-70-38
+		</p>
+		<a href="">
+			<img src="image/novaposta.png" alt="" class="footer-img4">
+		</a>	
+		<a href="">	
+			<img src="image/ukrposta.png" alt="" class="footer-img5">
+		</a>	
+		<a href="">	
+			<img src="image/mastercard.png" alt="" class="footer-img6">
+		</a>	
+		<a href="">	
+			<img src="image/visa.png" alt="" class="footer-img7">
+		</a>	
+	</div>
+</footer>	
+</body>
+</html>
